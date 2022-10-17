@@ -119,6 +119,8 @@ const tripsUpdateTrip = async (req, res) => {
     )
 }
 
+
+
 const getUser = (req, res, callback) => {
     if (req.auth && req.auth.email) {
         User
