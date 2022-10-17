@@ -14,7 +14,7 @@ export class TripCardComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private authenticationService: AuthenticationService
+    private authService: AuthenticationService
   ) { }
 
   ngOnInit() {
@@ -27,7 +27,7 @@ export class TripCardComponent implements OnInit {
   }
 
   public isLoggedIn(): boolean {
-    return this.authenticationService.isLoggedIn();
+    return this.authService.isLoggedIn();
   }
 
 }
